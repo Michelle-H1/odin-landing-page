@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --dark-primary: #1f2937;
+    --white-color: #F9FAF8;
+    --text-color: #E5E7EB;
+    --action-color: #3882F6;
+    --quote-bk: #E5E7EB;
+    --quote-text: #1F2937;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+header {
+    background-color: var(--dark-primary);
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    color: #fff;
+    padding: 8px;
+}
+
+nav a {
+    color:#fff;
+    text-decoration: none;
+}
+.left-links {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: 50px;
+
+}
+
+.right-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-right: 50px;
+}
+
+/* Hero */
+.hero {
+    width: 100%;
+    background-color: var(--dark-primary);
+}
+
+.hero-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.hero-text h2,
+.hero-text p
+{
+    width: 85%;
+    line-height: 1;
+}
+
+.hero-text p {
+    line-height: 1.1;
+    padding: 20px 0;
+    color: var(--text-color);
+}
+
+.hero-text h2 {
+ font-size: 48px;
+ font-weight: bolder;
+ color: var(--white-color)
+}
+
+.hero-text {
+    max-width: 450px;
+    padding: 20px 0;
+}
+
+
+.hero-image img {
+    width: 600px;
+    height: 220px;
+    background-color: var(--quote-bk);
+}
+
+/* Button */
+
+.btn {
+    background-color: var(--action-color);
+    color: var(--white-color);
+    font-weight: bold;
+    padding: .5em 2em;
+    border-radius: .5em;
+    border: none;
+}
+
+/* Information */
+.information {
+    padding: 1.5em;
+    padding-bottom: 2em;
+}
+.info-heading {
+    text-align: center;
+    padding: 1.5em;
+    font-size: 24px;
+    font-weight: extra-bold;
+    color: #1F2937;
+}
+
+.info-images {
+    width:  65%;
+    padding-bottom: 4em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info-images p {
+    width: 150px;
+    text-align: center;
+} 
+
+.info-image-1 img,
+.info-image-2 img,
+.info-image-3 img,
+.info-image-4 img {
+    height:150px;
+    width: 150px;
+    border: 2px solid var(--action-color);
+    border-radius: 1em;
+}
+
+/* quote */
+.quote {
+    background-color: var(--quote-bk);
+    height: 450px;
+}
+
+.quote-container {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    color: var(--quote-text);
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-container blockquote {
+    text-align: left;
+}
+
+.quote-container cite {
+    margin-left: auto;
+    padding-top: 20px;
+    font-weight: bold;
+    width: 50%;
+}
+
+/* call to action */
+.call-action{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.call-container {
+    display: grid;
+    align-content: center;
+    justify-content: center ;
+    grid-template-columns: 65% 35%;
+    width: 75%;
+    height: 160px;
+    background-color: var(--action-color);
+    margin: 0 auto;
+    color: white;
+    border-radius: .5em;
+}
+
+.action-text {
+    align-self: center;
+    margin-left: 6em;
+}
+
+.action-text p {
+    font-weight: 300;
+}
+
+.action-btn {
+    align-self: center;
+    justify-self: center;
+}
+.action-btn .btn {
+    border: 1px solid white;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-primary);
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
